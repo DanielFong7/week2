@@ -1,17 +1,18 @@
-function minMaxAvg(arr){
-
-let min =arr[0];
-let Max =arr[0];
-let Avg =arr[0];
-
-for (var i = 1; i < arr.length; i++){
-  if (arr[i] > Max) {
-    Max = arr[i];
+function Prime(num) {
+  for (var i = 2; i < num; i++) {
+    if(num % i === 0) {
+      return false;
+    }
   }
-  if (arr[i] < min) {
-    min = arr[i];
+  return true;
+}
+function displa(n) {
+  var arr = [2];
+  for (var i = 3;i < n; += 2) {
+    if (Prime(i) ) {
+      arr.push(i);
+    }
   }
-  Avg = Avg + arr[i];
+  console.log(arr);
 }
-  return [min, Max, Avg / arr.length]
-}
+display(1000);
