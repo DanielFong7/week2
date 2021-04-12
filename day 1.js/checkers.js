@@ -1,16 +1,13 @@
-var line = 7;
+var lines = 9;
 
-for (var i = 0; i < line; i ++){
-  
-  for(var j =0; j < i+1; j++){
-    document.write("#");
+for (var a = 0; a < lines; a++){  
+for (var b = 0; b < lines; b++){
+  if((b % 2==0 && a % 2 == 0 ) || (b % 2 == 1 && a %2 == 1)){
+    document.write('#');
   }
-  document.write("<br/>") 
+  else {
+    document.write("0");
+  }
 }
-for (var i = 0; i < line; i++){
-  for (var j = 0; j < line-i-1; j++){
-    document.write("#");
-  }
-  
-  document.write("<br/>")
+ document.write("<br/>")
 }
